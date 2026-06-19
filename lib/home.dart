@@ -53,9 +53,87 @@ class _HomeState extends State<Home> {
             ],),
           ))
         ,SizedBox(height: 20,),
-        Text("TopUP",style: TextStyle(fontSize: 30,fontWeight: FontWeight.w200),),
-        
+        Text("TopUP",style: TextStyle(fontSize: 30,fontWeight: FontWeight.w200),),SizedBox(height: 13,),
+        Container(width:MediaQuery.of(context).size.width * 0.80, height: 100, decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: const Color.fromARGB(255, 234, 234, 234))
+          ,child:
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row( mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              IconButton(onPressed: (){}, icon: Image.asset("assets/images/za5amobile.png")),
+              IconButton(onPressed: (){}, icon: Image.asset("assets/images/Ooredoo.png")),
+              IconButton(onPressed: (){}, icon: Image.asset("assets/images/tt.png")),
+              IconButton(onPressed: (){}, icon: Image.asset("assets/images/orange.png")),
+            ],
+          ),
+        ))
+        ,SizedBox(height: 15,),
+        Text("Exchange",style: TextStyle(fontSize: 32,fontWeight: FontWeight.w200),),SizedBox(height: 13,),
+        Container(width: MediaQuery.of(context).size.width * .9,decoration: BoxDecoration(borderRadius: BorderRadius.circular(50), color: Colors.white),child:Padding(padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10), child: Column(children: [
+        Row(children: [
+          SizedBox(width:MediaQuery.of(context).size.width*.33   ,child: Text("Currency", style: TextStyle(fontSize: 17, fontWeight: FontWeight.w200),)),
+          SizedBox(width:MediaQuery.of(context).size.width*.33   ,child: Text("Purchase", style: TextStyle(fontSize: 17, fontWeight: FontWeight.w200),)),
+          SizedBox(child: Text("Sell", style: TextStyle(fontSize: 17, fontWeight: FontWeight.w200),)),
+        ],),SizedBox(height: 15,),
+          Row(children: [
+          SizedBox(width:MediaQuery.of(context).size.width * .33 ,child:Row(children: [
+          Image.asset("assets/images/eu.png",width: 30,),
+          Text(" EUR")])),
+          SizedBox(width:MediaQuery.of(context).size.width * .33 ,child: Text("3.35",style: TextStyle(fontSize: 15),)),
+          Text("3.40",style: TextStyle(fontSize: 15),),
+        ],),SizedBox(height: 15,),
+        Row(children: [
+          SizedBox(width:MediaQuery.of(context).size.width * .33 ,child:Row(children: [
+          Image.asset("assets/images/us.png",width: 30,),
+          Text(" USD")])),
+          SizedBox(width:MediaQuery.of(context).size.width * .33 ,child: Text("2.90",style: TextStyle(fontSize: 15),)),
+          Text("2.94",style: TextStyle(fontSize: 15),),
         ],),
+        SizedBox(height: 15,),
+        Row(children: [
+          SizedBox(width:MediaQuery.of(context).size.width * .33 ,child:Row(children: [
+          Image.asset("assets/images/saudi.png",width: 30,),
+          Text(" SAR")])),
+          SizedBox(width:MediaQuery.of(context).size.width * .33 ,child: Text("7.25",style: TextStyle(fontSize: 15),)),
+          Text("8.04",style: TextStyle(fontSize: 15),),
+        ],),
+        SizedBox(height: 15,),
+        Row(children: [
+          SizedBox(width:MediaQuery.of(context).size.width * .33 ,child:Row(children: [
+          Image.asset("assets/images/china.png",width: 30,),
+          Text(" CNY")])),
+          SizedBox(width:MediaQuery.of(context).size.width * .33 ,child: Text("0.43",style: TextStyle(fontSize: 15),)),
+          Text("0.43",style: TextStyle(fontSize: 15),),
+        ],),
+        SizedBox(height: 15,),
+        Row(children: [
+          SizedBox(width:MediaQuery.of(context).size.width * .33 ,child:Row(children: [
+          Image.asset("assets/images/japan.png",width: 30,),
+          Text(" JPY")])),
+          SizedBox(width:MediaQuery.of(context).size.width * .33 ,child: Text("0.01",style: TextStyle(fontSize: 15),)),
+          Text("0.01",style: TextStyle(fontSize: 15),),
+        ],),
+        SizedBox(height: 15,),
+        Row(children: [
+          SizedBox(width:MediaQuery.of(context).size.width * .33 ,child:Row(children: [
+          Image.asset("assets/images/australia.png",width: 30,),
+          Text(" AUD")])),
+          SizedBox(width:MediaQuery.of(context).size.width * .33 ,child: Text("2.06",style: TextStyle(fontSize: 15),)),
+          Text("2.06",style: TextStyle(fontSize: 15),),
+        ],),
+        SizedBox(height: 15,),
+        Row(children: [
+          SizedBox(width:MediaQuery.of(context).size.width * .33 ,child:Row(children: [
+          Image.asset("assets/images/canada.png",width: 30,),
+          Text(" CAD")])),
+          SizedBox(width:MediaQuery.of(context).size.width * .33 ,child: Text("2.07",style: TextStyle(fontSize: 15),)),
+          Text("2.07",style: TextStyle(fontSize: 15),),
+        ],),
+        ]))
+        ,)
+        ,
+        SizedBox(height: 20,),
+        ]),
       ),
     );
   }
